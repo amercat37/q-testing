@@ -9,7 +9,7 @@
     msg: "{{ default_gateway_ip.stdout }}"
 
 - name: import_child_var.yml
-  import_tasks: import_child_var.yml
+  include_tasks: import_child_var.yml
   when: false
 
 - name: Print Parent Variable
