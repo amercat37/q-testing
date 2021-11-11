@@ -3,6 +3,5 @@
 - name: Variable Inheritence
   hosts: all
   gather_facts: false
-  tasks:
-  - name: import_parent_vars.yml
-    import_tasks: import_parent_vars.yml
+  roles:
+  - import_vars
