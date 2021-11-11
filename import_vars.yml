@@ -5,4 +5,4 @@
   gather_facts: false
   tasks:
   - name: import_parent_vars.yml
-    import_task: import_parent_vars.yml
+    import_tasks: import_parent_vars.yml
