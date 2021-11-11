@@ -6,7 +6,7 @@
 
 - name: Print Parent Variable
   debug:
-    msg: "{{ default_gateway_ip.stdio }}"
+    msg: "{{ default_gateway_ip.stdout }}"
 
 - name: import_child_var.yml
   import_tasks: import_child_var.yml
@@ -14,4 +14,4 @@
 
 - name: Print Parent Variable
   debug:
-    msg: "{{ default_gateway_ip.stdio }}"
+    msg: "{{ default_gateway_ip.stdout }}"
