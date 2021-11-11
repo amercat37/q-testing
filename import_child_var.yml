@@ -1,0 +1,5 @@
+---
+
+ - name: Set Child Variable
+   shell: echo "child_variable"
+   register: default_gateway_ip

@@ -1,0 +1,8 @@
+---
+
+- name: Variable Inheritence
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: import_parent_vars.yml
+      import_task: import_parent_vars.yml

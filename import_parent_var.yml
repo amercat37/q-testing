@@ -1,0 +1,17 @@
+---
+
+- name: Set Parent Variable
+  shell: echo "parent_variable"
+  register: default_gateway_ip
+
+ - name: Print Parent Variable
+  debug:
+    msg: "{{ default_gateway_ip.stdio }}"
+
+- name: import_child_vars.yml
+  import_task: import_child_vars.yml
+  when: false
+
+- name: Print Parent Variable
+  debug:
+    msg: "{{ default_gateway_ip.stdio }}"
